@@ -11,29 +11,36 @@
 //////////////////////////////////////////////////////////////////////
 // Step 1 - Object Creation //////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
-
-
+animal = {};
+animal.species = "monkey";
+animal["name"] = "George";
+animal.noises = [];
+//console.log(animal);
 
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Array Creation ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
-
+noises = [];
+noises[0] = "oooh";
+noises.push("aaah");
+noises.unshift("eeeh");
+noises[noises.length] = "uuuh";
+//console.log(noises);
 
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Combining Step 1 and 2 ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
-
+animal['noises'] = noises;
+animal.noises.push("shhh");
+//console.log(animal);
 
 /* *******************************************************************
  * Step 4 - Review
  *
  * 1. What are the different ways you can access properties on objects?
- *
+ *    A/: dot and bracket notation
  * 2. What are the different ways of accessing elements on arrays?
- *
+ *    A/: bracket notation and Array functions
  * *******************************************************************
  */
 
@@ -49,7 +56,28 @@
 //////////////////////////////////////////////////////////////////////
 // Step 6 - A Collection of Animals //////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+animals = [];
+animals.push(animal);
+let duck = { 
+  species: 'duck', 
+  name: 'Jerome', 
+  noises: ['quack', 'honk', 'sneeze', 'woosh']
+};
+animals.push(duck);
 
+let dog = { 
+  species: 'dog', 
+  name: 'Larry', 
+  noises: ['rrrrr', 'howl']
+};
+
+let turtle = { 
+  species: 'teenage mutant ninja turtle', 
+  name: 'Leo', 
+  noises: ['hiya', 'cowabunga']
+};
+
+animals.push(dog, turtle);
 
 
 //////////////////////////////////////////////////////////////////////
