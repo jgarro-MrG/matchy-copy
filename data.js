@@ -84,7 +84,19 @@ animals.push(dog, turtle);
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+// friends is an array to match the animals array
+friends = [];
 
+function getRandom(array) {
+  let randomIndex = Math.floor(Math.random() * (array.length - 1));
+  return randomIndex;
+}
+
+friends.push(animals[getRandom(animals)].name);
+//console.log(friends);
+
+animals[getRandom(animals)].friends = friends;
+//console.log(animals);
 
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
